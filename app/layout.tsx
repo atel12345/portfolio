@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://amine-telouani.vercel.app"),
+  metadataBase: new URL("https://portfolio-zeta-coral-27.vercel.app"),
   title: "Amine Telouani | Computer Engineering & AI",
   description:
     "Portfolio of Amine Telouani, an engineering student building applied AI, data, and web systems in Casablanca.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Amine Telouani | Computer Engineering & AI",
     description:
       "Applied AI, data engineering, and web systems by Amine Telouani.",
-    url: "https://amine-telouani.vercel.app",
+    url: "https://portfolio-zeta-coral-27.vercel.app",
     siteName: "Amine Telouani",
     type: "website"
   },

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f1f3f5;
+  --foreground: #17202a;
+  --muted: #5f6b76;
+  --line: #d7dde2;
+  --surface: #f8fafb;
+  --surface-strong: #e8edf1;
+  --accent: #2457d6;
+}
+
+[data-theme="dark"] {
+  --background: #101419;
+  --foreground: #edf2f7;
+  --muted: #a2adb8;
+  --line: #2a333d;
+  --surface: #151b21;
+  --surface-strong: #1c252e;
+  --accent: #82a7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist), Arial, sans-serif;
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), var(--font-geist), Arial, sans-serif;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+.mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
